@@ -1,0 +1,15 @@
+.images {
+  display: flex;
+
+  div {
+    padding: 50px 25px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.description {
+  margin: 80px 25px;
+}

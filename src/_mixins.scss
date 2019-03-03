@@ -1,0 +1,7 @@
+@mixin container ($padding: 1rem 2rem 2rem) {
+  display: block;
+  margin: 1rem auto;
+  max-width: 960px;
+  padding: $padding;
+  width: 80%;
+}

@@ -1,0 +1,11 @@
+<ui-view>
+  <h1>Latest Hacker News</h1>
+  <article ng-repeat="article in $ctrl.news">
+    <a ng-href="{{::article.url}}" target="blank">{{::article.title}}</a>
+    <span class="date">{{::article.time * 1000|date:'MMM dd HH:mm'}}</span>
+    by <span class="author">{{::article.by}}</span>
+  </article>
+  <button ng-click="$ctrl.loadNext()"
+          ng-disabled="$ctrl.loading"
+          ng-if="$ctrl.news.length > 0">Load more...</button>
+</ui-view>

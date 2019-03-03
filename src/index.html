@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <base href="%BASE_URL%">
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#dc143c">
+    <title>%APP_NAME%</title>
+    <meta name="description" content="AngularJS + webpack 4 example project.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body ng-app="app">
+    <div class="top-bar-logo">
+      <a href="%APP_URL%" target="_self" aria-label="Getting Started Homepage">
+        %APP_NAME%
+      </a>
+    </div>
+
+    <div class="app-content">
+      <nav>
+        <a ui-sref="hello">Hello</a>
+        <a ui-sref="news">Hacker news</a>
+        <a ui-sref="images">Images</a>
+      </nav>
+      <ui-view>
+        <div class="loader-container">
+          <div class="lds-dual-ring"></div>
+        </div>
+      </ui-view>
+      <footer></footer>
+    </div>
+  </body>
+</html>

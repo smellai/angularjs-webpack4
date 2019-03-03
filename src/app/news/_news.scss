@@ -1,0 +1,11 @@
+news {
+  @include container;
+
+  article {
+    margin-bottom: 1em;
+
+    a {
+      display: block;
+    }
+  }
+}

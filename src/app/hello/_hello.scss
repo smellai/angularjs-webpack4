@@ -1,0 +1,29 @@
+hello {
+  @include container;
+
+  text-align: center;
+
+  .tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    font: {
+      family: sans-serif;
+      size: 18px;
+    }
+
+    .tool {
+      align-items: center;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+      height: 200px;
+      width: 200px;
+    }
+  }
+}

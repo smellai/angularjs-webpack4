@@ -1,0 +1,14 @@
+<div class="images">
+    <div ng-repeat="image in $ctrl.images">
+        <img ng-src="{{image}}" alt="meow">
+    </div>
+</div>
+
+<div class="description">
+    This view show how to use the "Constants" and "Images" alias defined in webpack config
+</div>
+
+<div class="description">
+    You have access to env variables too, example: <br>
+    Current env is: {{$ctrl.currentEnv}}
+</div>
